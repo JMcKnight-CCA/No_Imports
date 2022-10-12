@@ -1,0 +1,23 @@
+i = 0
+x = 0
+y = 0
+z = 0
+w = 'w'
+a = 'a'
+s = 's'
+d = 'd'
+SPACE = ' '
+
+print('Enter 1 key input to move around')
+while i == 0:
+    KEYS = input()
+    if (w in KEYS) or (a in KEYS) or (s in KEYS) or (d in KEYS) or (SPACE in KEYS):
+        x += int(KEYS.count('w'))
+        z -= int(KEYS.count('a'))
+        x -= int(KEYS.count('s'))
+        z += int(KEYS.count('d'))
+        y += int(KEYS.count(' '))
+    else:
+        print(str(KEYS) + ' is an invalid input.')
+    pos = (x, y, z)
+    print('Player position: ' + str(pos))
