@@ -1,0 +1,67 @@
+#Jonathan and Jackson McKnight, Elijah Koser, and Josaih Schatte
+
+def welcome():
+    print(
+    '*********************************\n\n'
+    '     WELCOME TO BURGER MAKER!    \n\n'
+    '*********************************\n\n'
+    ' Which Fast Food are you craving?\n\n'
+    'CHOICES:\n'
+    "1.WOODYS\n2.MCDIESEL\n3.KURBER BING\n4.OUT-N-IN BURBER\n5.SHOOTZ\n6.ONE GUY\n7.SUNKYS\n8.SOFTEES\n9.WHENABURGER\n10.CHEAP CRAP FOUND IN THE BACK OF WALMARTS ONE DOLLAR FREEZER\n"
+    )
+
+def SUNKYS():
+    print('\nGOOD CHOICE!!!'
+    '\nHere is the menu, you have unlimited money, so dont pay attention to the prices'
+    '\n*************MENU****************'
+    '\n1. Single fast burger:\nHeated in the mircowave for 3 seconds\n80% of the burger is bun and toppings\nFinished with HYPER SPEED SAUCE\nPrice: $62.88'
+
+    )
+
+
+def restaurant_choosing():
+    rest_choice = ""
+
+    while rest_choice != "7":
+        rest_choice = int(input())
+
+        if rest_choice == 1:
+            print('\nClosed because copartner went to space to try and find his father')
+        elif rest_choice == 2:
+            print('\nI dont recommend going there due to low FDA ratings and illeagal secret sauces')
+        elif rest_choice == 3:
+            print('\nOnly product on menu is foot letuce, would you like to give it a try?')
+            kurber_bing = ""
+            while kurber_bing != "yes" or "no":
+                kurber_bing = input()
+                if kurber_bing == 'yes':
+                    print('\nAdded to order')
+                    break
+                elif kurber_bing == 'no':
+                    print('\nI thought so')
+                    break
+                else:
+                    print('\nNot an option, print "yes" or "no"')
+        elif rest_choice == 4:
+            print('\nIt is open but there is no door to get in... stay out I guess')
+        elif rest_choice == 5:
+            print('\nDue to recent shooting activity, Shootz is closed')
+        elif rest_choice == 6:
+            print('\nNot enough staffing')
+        elif rest_choice == 8:
+            print('\nIf you want wet, moist, thick, mushy, and VERY soft burgers with no real meat... try again sometime')
+        elif rest_choice == 9:
+            print('\nWhy would we choose to go here? We dont even know when they open')
+        elif rest_choice == 10:
+            print('\nGood Boi, added to receipt')
+        else:
+            print('\nNot an option')
+        print('\nChoose a different restaurant')
+    
+    if rest_choice == '7':
+        break
+        SUNKYS()
+
+welcome()
+restaurant_choosing()
+SUNKYS()
